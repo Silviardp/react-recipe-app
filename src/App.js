@@ -50,7 +50,7 @@ const App = () => {
           <Recipe
             key={recipe.recipe.label}
             title={recipe.recipe.label}
-            calories={recipe.recipe.calories}
+            calories={Math.round(recipe.recipe.calories)}
             image={recipe.recipe.image}
             ingredients={recipe.recipe.ingredients}
           />
